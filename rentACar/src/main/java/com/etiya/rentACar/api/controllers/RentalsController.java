@@ -39,10 +39,4 @@ public class RentalsController {
 		return rentalService.getAll();
 	}
 	
-	@PutMapping("/update")
-	public Result update(@RequestBody @Valid UpdateRentalRequest updateRentalRequest) {
-		
-		return this.rentalService.update(updateRentalRequest);
-	}
-	
 }
